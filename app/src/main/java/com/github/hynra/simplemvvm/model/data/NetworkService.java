@@ -1,10 +1,10 @@
 package com.github.hynra.simplemvvm.model.data;
 
 import com.github.hynra.simplemvvm.model.entity.Movie;
+import com.github.hynra.simplemvvm.model.entity.Response;
 
 import java.util.List;
 
-import retrofit2.Response;
 import retrofit2.http.GET;
 import retrofit2.http.Query;
 import rx.Observable;
