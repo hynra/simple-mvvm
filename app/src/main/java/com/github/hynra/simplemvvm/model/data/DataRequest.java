@@ -14,7 +14,7 @@ import rx.schedulers.Schedulers;
 
 public class DataRequest {
 
-    public void getMovies(Subscriber<Movie> subscriber, int start, int count) {
+    public static void getMovies(Subscriber<Movie> subscriber, int start, int count) {
 
         ApiService.getRetroftInstance()
                 .newBuilder()
