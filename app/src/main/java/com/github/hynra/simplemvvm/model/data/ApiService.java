@@ -1,7 +1,10 @@
 package com.github.hynra.simplemvvm.model.data;
 
+import com.github.hynra.simplemvvm.App;
 import com.github.hynra.simplemvvm.R;
 
+import okhttp3.OkHttpClient;
+import okhttp3.Request;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
