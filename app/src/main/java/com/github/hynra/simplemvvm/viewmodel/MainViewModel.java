@@ -59,7 +59,7 @@ public class MainViewModel {
             public void onError(Throwable e) {
                 hideAll();
                 errorInfoVisibility.set(View.VISIBLE);
-                Log.e("errorinfo",e.getMessage());
+                Log.e("MainViewModel",e.getMessage());
                 exception.set(e.getMessage());
             }
 

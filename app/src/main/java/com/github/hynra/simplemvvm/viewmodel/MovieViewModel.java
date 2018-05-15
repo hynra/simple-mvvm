@@ -1,7 +1,10 @@
 package com.github.hynra.simplemvvm.viewmodel;
 
 import android.databinding.BaseObservable;
+import android.databinding.BindingAdapter;
+import android.widget.ImageView;
 
+import com.bumptech.glide.Glide;
 import com.github.hynra.simplemvvm.model.entity.Movie;
 
 /**
@@ -47,4 +50,14 @@ public class MovieViewModel extends BaseObservable {
     public String getImageUrl() {
         return mMovie.getImages().getSmall();
     }
+
+
+    @BindingAdapter({"app:imageUrl"})
+    public static void loadImage(ImageView imageView, String url) {
+        Glide.with(imageView.getContext())
+                .load(url)
+                .into(imageView);
+
+    }
+
 }
